@@ -6,35 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.codepath.simpletodo.MainActivity">
 
-    <Button
-        android:id="@+id/btnAddItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:onClick="onAddItem"
-        android:text="Add" />
-
     <ListView
         android:id="@+id/lvItems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnAddItem"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/etNewItem" />
 
     <EditText
         android:id="@+id/etNewItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add a new item here"
+        android:inputType="textPersonName"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btnAddItem"
-        android:layout_toStartOf="@+id/btnAddItem"
-        android:ems="10"
-        android:hint="Add a new item here"
-        android:inputType="textPersonName" />
+        android:layout_toStartOf="@+id/btnAddItem" />
+
+    <ImageButton
+        android:id="@+id/btnAddItem"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvItems"
+        android:background="@android:color/transparent"
+        android:onClick="onAddItem"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 </RelativeLayout>
