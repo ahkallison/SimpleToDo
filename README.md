@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The major challenge I faced was accustoming myself to the Android Studio IDE. Further, adding the image button was challenging because it was an extra feature that I challenged myself to learn independently.
 
 ## License
 
